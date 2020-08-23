@@ -42,6 +42,13 @@ body {
     margin-top: 10px;
 }
 
+.btns-header {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-between
+}
+
 .btn-header {
     display: flex;
     justify-content: center;
@@ -49,6 +56,7 @@ body {
     width: 176px;
     height: 65px;
     background: #E6005A;
+    opacity: 0.7;
     border-radius: 10px;
     text-align: center;
     font-weight: 600;
@@ -56,6 +64,12 @@ body {
     line-height: 34px;
     text-transform: uppercase;
     cursor: pointer;
+}
+
+.btn-header-active {
+    background: #E6005A;
+    opacity: 100%;
+    cursor: default;
 }
 
 .header hr {
@@ -98,74 +112,57 @@ body {
 
 .botoes-nav {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     margin: 50px 0;
 }
 
-.btn-nav {
+.nav-dropdown {
+    border-radius: 10px;
+    overflow: hidden
+}
+
+.nav-item {
+    border: inherit;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 224px;
+    width: 450px;
     height: 75px;
     background-color: #A5A6A9;
-    border-radius: 10px;
     text-transform: uppercase;
     font-size: 25px;
     line-height: 34px;
     color: #fff;
     cursor: pointer;
+    border: 0;
 }
 
-.sem1:hover {
+.btn-semestre1 {
     background-color: #FFBA05;
 }
 
-.fixed-sem1 {
-    background-color: #FFBA05;
-}
-
-.sem2:hover {
+.btn-semestre2 {
     background-color: #00C86F;
 }
 
-.fixed-sem2 {
-    background-color: #00C86F;
-}
-
-.sem3:hover {
-    background-color: #2E7EFB;
-}
-
-.fixed-sem3 {
-    background-color: #2E7EFB;
-}
-
-.bootcamp:hover {
+.btn-bootcamp {
     background-color: #DC6EBE;
 }
 
-.fixed-bootcamp {
-    background-color: #DC6EBE;
-}
-
-.todos:hover {
-    background-color: #E6005A;
-}
-
-.fixed-todos {
-    background-color: #E6005A;
+.btn-prof-assistente {
+    background-color: #2E7EFB;
 }
 
 .botoes-nav i {
-    font-size: 55px;
-    color: white;
+    font-size: 30px;
+    color: #FFBA05;
     border-radius: 50%;
-    background-color: #E6005A;
-    border: 5px solid #E6005A;
+    background-color: #fff;
+    border: 4px solid #fff;
     cursor: pointer;
+    margin-left: 20px;
 }
 
 
@@ -177,7 +174,6 @@ body {
 }
 
 .cards .card {
-    height: 120px;
     width: 100%;
     background-color: white;
     margin-bottom: 50px;
@@ -186,7 +182,8 @@ body {
 .cards .title {
     font-size: 40px;
     line-height: 54px;
-    margin-left: 40px
+    margin-left: 40px;
+    color: #FFBA05;
 }
 
 .cards .bold-title {
@@ -203,26 +200,6 @@ body {
     margin-right: 20px;
 }
 
-.sem1-arrow i {
-    background-color: #FFBA05;
-    border: 5px solid #FFBA05;
-}
-
-.sem2-arrow i {
-    background-color: #00C86F;
-    border: 5px solid #00C86F;
-}
-
-.sem3-arrow i {
-    background-color: #2E7EFB;
-    border: 5px solid #2E7EFB;
-}
-
-.bootcamp-arrow i {
-    background-color: #DC6EBE;
-    border: 5px solid #DC6EBE;
-}
-
 .main-card {
     display: flex;
     justify-content: space-between;
@@ -230,20 +207,72 @@ body {
     height: 120px;
 }
 
-.sem1-border-left {
-    border-left: 27px solid #FFBA05;
+.sem1-border-bottom {
+    border-bottom: 27px solid #FFBA05;
 }
 
-.sem2-border-left {
-    border-left: 27px solid #00C86F;
+.sem2-border-bottom {
+    border-bottom: 27px solid #00C86F;
 }
 
-.sem3-border-left {
-    border-left: 27px solid #2E7EFB;
+.sem3-border-bottom {
+    border-bottom: 27px solid #2E7EFB;
 }
 
-.bootcamp-border-left {
-    border-left: 27px solid #DC6EBE;
+.bootcamp-border-bottom {
+    border-bottom: 27px solid #DC6EBE;
+}
+
+
+/* TRILHA */
+
+.trilha {
+    display: grid;
+    grid-template-columns: [first] 280px [line2] auto [end];
+    column-gap: 20px;
+    grid-template-rows: repeat(8, 133px [col-start]);
+    row-gap: 0;
+    border: 3px solid blue;
+    width: 80%;
+    margin: auto;
+}
+
+.trilha .trilha-imgs {
+    border: 3px solid pink;
+    grid-column-start: first;
+    grid-column-end: line2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.trilha-imgs img {
+    width: 280px
+}
+
+.trilha .trilha-contents {
+    display: grid;
+    align-content: center;
+    border: 3px solid purple;
+    grid-column-start: line2;
+    grid-column-end: end;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.trilha-contents .title-trilha {
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.trilha-contents p {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 10px;
+}
+
+.trilha-contents span {
+    color: #E6005A;
 }
 
 
