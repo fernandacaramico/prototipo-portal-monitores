@@ -229,50 +229,104 @@ body {
 .trilha {
     display: grid;
     grid-template-columns: [first] 280px [line2] auto [end];
-    column-gap: 20px;
-    grid-template-rows: repeat(8, 133px [col-start]);
+    column-gap: 40px;
+    grid-template-rows: repeat(9, 133px [col-start]);
     row-gap: 0;
-    border: 3px solid blue;
     width: 80%;
     margin: auto;
+    margin-bottom: 80px;
 }
 
-.trilha .trilha-imgs {
-    border: 3px solid pink;
+.col-esquerda {
     grid-column-start: first;
     grid-column-end: line2;
-    grid-row-start: 1;
-    grid-row-end: 2;
 }
 
-.trilha-imgs img {
+.col-esquerda img {
     width: 280px
 }
 
-.trilha .trilha-contents {
+.col-direita {
     display: grid;
     align-content: center;
-    border: 3px solid purple;
     grid-column-start: line2;
     grid-column-end: end;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+    overflow: hidden;
+    border-radius: 10px;
+    padding-left: 20px;
+}
+
+.col-direita p {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 10px;
+}
+
+.col-direita .pink {
+    color: #E6005A;
+}
+
+.linha-1 {
     grid-row-start: 1;
     grid-row-end: 2;
 }
 
-.trilha-contents .title-trilha {
-    font-weight: 300;
-    font-size: 30px;
-    line-height: 35px;
+.linha-2 {
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 
-.trilha-contents p {
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 10px;
+.linha-3 {
+    grid-row-start: 3;
+    grid-row-end: 4;
 }
 
-.trilha-contents span {
-    color: #E6005A;
+.linha-4 {
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.linha-5 {
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+.linha-6 {
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+
+.linha-7 {
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+
+.linha-8 {
+    grid-row-start: 8;
+    grid-row-end: 9;
+}
+
+.linha-9 {
+    grid-row-start: 9;
+    grid-row-end: 10;
+}
+
+#linha1:hover,
+#linha1:hover+#linha1,
+#linha1+#linha1:hover {
+    background-color: #ffb805;
+    cursor: pointer;
+}
+
+#linha2:hover,
+#linha2:hover+#linha2,
+#linha2+#linha2:hover {
+    background-color: #ffb805;
+    cursor: pointer;
 }
 
 
