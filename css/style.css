@@ -7,6 +7,10 @@ body {
     background-color: #E5E5E5;
 }
 
+a {
+    text-decoration: none;
+}
+
 .container {
     width: 85%;
     max-width: 1500px;
@@ -33,13 +37,18 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 120px;
+    height: 80px;
+    padding-top: 10px;
 }
 
 .logo-bt {
     justify-content: flex-start;
     width: 205px;
     margin-top: 10px;
+}
+
+.logo-bt img {
+    width: 150px;
 }
 
 .btns-header {
@@ -50,7 +59,6 @@ body {
 }
 
 .btns-header a {
-    text-decoration: none;
     color: white;
 }
 
@@ -58,15 +66,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 176px;
-    height: 65px;
+    width: 165px;
+    height: 55px;
     background: #E6005A;
     opacity: 0.7;
     border-radius: 10px;
     text-align: center;
     font-weight: 600;
-    font-size: 25px;
-    line-height: 34px;
+    font-size: 23px;
+    line-height: 32px;
     text-transform: uppercase;
     cursor: pointer;
 }
@@ -78,7 +86,7 @@ body {
 }
 
 .header hr {
-    margin-bottom: 30px;
+    margin: 10px 0 20px;
 }
 
 .header .second-row {
@@ -91,18 +99,19 @@ body {
 
 .header .second-row .titles {
     width: 60%;
+    margin-left: 30px;
 }
 
 .header .second-row .titles .title {
     font-weight: bold;
-    font-size: 48px;
-    line-height: 1.5;
+    font-size: 42px;
+    line-height: 1.3;
     margin-top: 0;
 }
 
 .header .second-row .titles .subtitle {
     font-weight: 300;
-    font-size: 32px;
+    font-size: 28px;
     line-height: 1.5;
     margin-bottom: 0;
 }
@@ -112,53 +121,52 @@ body {
     text-align: end;
 }
 
+.img-header img {
+    height: 230px;
+    margin-right: 40px;
+}
+
 
 /* BOTOES NAV */
 
 .botoes-nav {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
-    margin: 50px 0;
-}
-
-.nav-dropdown {
-    border-radius: 10px;
-    overflow: hidden
+    margin: 30px 0;
 }
 
 .nav-item {
-    border: inherit;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 450px;
+    text-align: center;
+    width: 250px;
     height: 75px;
-    background-color: #A5A6A9;
+    background-color: #FFBA05;
     text-transform: uppercase;
-    font-size: 25px;
-    line-height: 34px;
+    font-size: 20px;
+    line-height: 25px;
     color: #fff;
-    cursor: pointer;
     border: 0;
 }
 
-.btn-semestre1 {
+
+/*hover botoes nav*/
+
+#not-active {
+    background-color: #A5A6A9;
+    cursor: pointer;
+}
+
+#not-active:hover {
     background-color: #FFBA05;
 }
 
-.btn-semestre2 {
-    background-color: #00C86F;
-}
 
-.btn-bootcamp {
-    background-color: #DC6EBE;
-}
-
-.btn-prof-assistente {
-    background-color: #2E7EFB;
-}
+/* fim hover botoes nav*/
 
 .botoes-nav i {
     font-size: 30px;
@@ -216,18 +224,6 @@ body {
     border-bottom: 27px solid #FFBA05;
 }
 
-.sem2-border-bottom {
-    border-bottom: 27px solid #00C86F;
-}
-
-.sem3-border-bottom {
-    border-bottom: 27px solid #2E7EFB;
-}
-
-.bootcamp-border-bottom {
-    border-bottom: 27px solid #DC6EBE;
-}
-
 
 /* TRILHA */
 
@@ -248,7 +244,7 @@ body {
 }
 
 .col-esquerda img {
-    width: 280px
+    height: 133px
 }
 
 .col-direita {
