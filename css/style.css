@@ -18,14 +18,13 @@ a {
     margin: auto;
 }
 
-.display-none {
-    display: none;
+.pointer {
+    cursor: pointer;
 }
 
-.display-none {
-    display: block;
+.pink {
+    color: #E6005A;
 }
-
 
 /* HEADER */
 
@@ -90,10 +89,6 @@ a {
     background: #E6005A;
     opacity: 100%;
     cursor: default;
-}
-
-.pointer {
-    cursor: pointer;
 }
 
 .header .second-row {
@@ -274,10 +269,6 @@ a {
     margin-top: 10px;
 }
 
-.pink {
-    color: #E6005A;
-}
-
 .linha-1 {
     grid-row-start: 1;
     grid-row-end: 2;
@@ -404,5 +395,5 @@ table a {
     background-color: #292C34;
     color: #F2F2F2;
     padding: 40px;
-    margin-top: 50px
+    margin-top: 100px
 }
