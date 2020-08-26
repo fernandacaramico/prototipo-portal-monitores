@@ -9,6 +9,7 @@ body {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 .container {
@@ -39,6 +40,11 @@ a {
     align-items: center;
     height: 80px;
     padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.header hr {
+    margin: 0 0 20px;
 }
 
 .logo-bt {
@@ -55,7 +61,7 @@ a {
     display: flex;
     flex-direction: row;
     width: 50%;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 .btns-header a {
@@ -71,6 +77,7 @@ a {
     background: #E6005A;
     opacity: 0.7;
     border-radius: 10px;
+    margin-left: 30px;
     text-align: center;
     font-weight: 600;
     font-size: 23px;
@@ -85,8 +92,8 @@ a {
     cursor: default;
 }
 
-.header hr {
-    margin: 10px 0 20px;
+.pointer {
+    cursor: pointer;
 }
 
 .header .second-row {
@@ -267,7 +274,7 @@ a {
     margin-top: 10px;
 }
 
-.col-direita .pink {
+.pink {
     color: #E6005A;
 }
 
@@ -316,6 +323,7 @@ a {
     grid-row-end: 10;
 }
 
+
 #linha1:hover,
 #linha1:hover+#linha1,
 #linha1+#linha1:hover {
@@ -328,8 +336,65 @@ a {
 #linha2+#linha2:hover {
     background-color: #ffb805;
     cursor: pointer;
+} 
+
+/* ARTIGO PAGINA TRILHA */
+.artigo h1 {
+    font-weight: 500;
+    font-size: 42px;
 }
 
+.artigo p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.artigo .texto {
+    max-width: 70%;
+    margin: auto;
+}
+
+.tabela {
+    width: 80%;
+    margin: 60px auto;
+    box-shadow: -10px 9px 0 #000000;
+    background-color: #fafafa;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+    margin: auto;
+}
+
+.title-table {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 1.5;
+    text-align: center;
+    background-color: #c5c5c5;
+}
+
+table thead {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+
+th, tr:not(:last-child) {
+    border-bottom: 1px solid #999;
+    padding: 1rem;
+    text-align: center;
+}
+
+td {
+    padding: 1rem;
+}
+
+table a {
+    font-size: 20px
+}
 
 /* FOOTER */
 
@@ -339,4 +404,5 @@ a {
     background-color: #292C34;
     color: #F2F2F2;
     padding: 40px;
+    margin-top: 50px
 }
