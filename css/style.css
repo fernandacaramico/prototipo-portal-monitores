@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Exo 2', 'Exo', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: #fafafa;
+    background-color: #e5e5e5;
 }
 
 a {
@@ -195,7 +195,7 @@ a {
 
 .cards .card {
     width: 100%;
-    background-color: white;
+    background-color: #fff;
     margin-bottom: 50px;
 }
 
