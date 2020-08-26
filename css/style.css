@@ -97,6 +97,7 @@ a {
     justify-content: space-between;
     align-items: center;
     padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .header .second-row .titles {
@@ -136,7 +137,7 @@ a {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    margin: 30px 0;
+    margin: 0 0 30px;
 }
 
 .nav-item {
@@ -385,6 +386,36 @@ td {
 
 table a {
     font-size: 20px
+}
+
+/* CULTURA */
+
+.cultura {
+margin-top: 50px;
+}
+
+.cultura .card {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-left: 27px solid #2E7EFB;
+    padding: 30px 70px 30px 50px;
+    margin: 30px 0;
+}
+
+.cultura .title {
+    font-size: 32px;
+    line-height: 1.5;
+    font-weight: 700;
+}
+
+.cultura .title span {
+    font-weight: 400;
+}
+
+.cultura i {
+    font-size: 40px;
+    color: #2E7EFB;
 }
 
 /* FOOTER */
