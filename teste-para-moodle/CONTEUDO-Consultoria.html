@@ -1,0 +1,299 @@
+<div style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: #333">
+    <div style="display: block; background-color: #e60058b6; border-radius: 5px; overflow: hidden; text-align: center; margin-bottom: 40px">
+        <h1>Projetos</h1>
+    </div>
+
+    <div style="width: 80%; margin: auto">‏‏‎
+        <h4 style="margin: 20px 0 10px">Introdução</h4>
+        <p>Bem vindo e bem vinda à Consultoria!</p>
+        <p>Este material tem o objetivo de te auxiliar na configuração e preparo do seu ambiente para o desenvolvimento dos projetos.
+        </p>
+        <p>Softwares que utilizaremos:</p>
+        <ul role="list">
+            <li>
+                GitBash – terminal de comandos e versionamento git
+            </li>
+            <li>
+                Bizagi – para desenho de BPMN
+            </li>
+            <li>
+                Eclipse com plugin Activiti – para desenho da programação de fluxos BPMN
+            </li>
+            <li>
+                NetBeans – para programação em Java
+            </li>
+            <li>
+                JDK – para programação em Java
+            </li>
+            <li>
+                NodeJS - desenvolvimento
+            </li>
+            <li>
+                VisualStudio Code –IDE
+            </li>
+            <li>
+                Postman ou Insomnia – testar endpoints e protocolos http GET/POST/etc
+            </li>
+            <li>
+                MySQL Workbench – Banco de Dados
+            </li>
+            <li>
+                Maven – compilação dos projetos em Java. Baixe o bin.
+            </li>
+        </ul>
+
+        <p>Instale-os em seu dispositivo e tenha sempre a última versão estável disponível.
+        </p>
+
+        <h4 style="margin: 20px 0 10px">
+            Projetos
+        </h4>
+
+        <p>Na data que este manual foi elaborado, em setembro de 2020, temos 3 projetos na Matrix em andamento:
+        </p>
+
+        <ul role="list">
+            <li>
+                core-matrix-energia
+            </li>
+            <li>
+                portal-intranet-matrix-energia
+            </li>
+            <li>
+                processos-matrix
+            </li>
+        </ul>
+
+        <p>Certifique-se de que seu usuário no github tem acesso à organização BandTec. Entre em contato com algum dos monitores veteranos caso não tenha acesso.
+        </p>
+
+        <h5 style="margin: 20px 0 10px">
+            1º Passo – Clonar os projetos para a sua máquina
+        </h5>
+
+        <p>
+            <a href="https://github.com/BandTec/core-matrix-energia" target="_blank" rel="noreferrer noopener">https://github.com/BandTec/core-matrix-energia</a>
+        </p>
+
+        <p>
+            <a href="https://github.com/BandTec/processos-matrix" target="_blank" rel="noreferrer noopener">https://github.com/BandTec/processos-matrix</a>
+        </p>
+
+        <p>
+            <a href="https://github.com/BandTec/portal-intranet-matrix-energia" target="_blank" rel="noreferrer noopener">https://github.com/BandTec/portal-intranet-matrix-energia</a>
+        </p>
+
+
+        <p>Enquanto os projetos estão sendo clonados para seu repositório local, pode seguir para os próximos passos.</p>
+
+
+        <h5 style="margin: 20px 0 10px">
+            2º Passo – Criando as variáveis de ambiente
+        </h5>
+
+        <p>Para que os projetos funcionem corretamente, é necessário configurar variáveis de ambiente no seu dispositivo. Caso esteja usando Windows, busque em Iniciar por “variáveis” e selecione:
+        </p>
+        <p xml:lang="EN-US" paraid="1771981901" paraeid="{64e33bf6-f016-472f-8619-eba049cedcc4}{58}" style="text-align: center;" lang="EN-US"><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:259}"><img
+          src="https://raw.githubusercontent.com/fernandacaramico/prototipo-portal-monitores/master/img/consultoria/projetos/001_editar-variaveis-sistema.PNG"
+          alt="Editar as variáveis do Sistema em Painel de Controle"
+          class="img-responsive atto_image_button_text-bottom" width="382" height="158"><br></p>
+    <p xml:lang="EN-US" paraid="1771981901" paraeid="{64e33bf6-f016-472f-8619-eba049cedcc4}{58}" lang="EN-US"><span
+        data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:259}"></p>
+
+
+    <p>Na janela que aparecer, clique em “Variáveis de Ambiente...”
+      <br></p>
+
+    <p xml:lang="EN-US" paraid="2112379588" paraeid="{222e492b-f4be-44fe-a449-38420a8ec8b7}{32}"
+      style="text-align: center;" lang="EN-US"><img
+        src="https://raw.githubusercontent.com/fernandacaramico/prototipo-portal-monitores/master/img/consultoria/projetos/002_variaveis-de-ambiente.png"
+        alt="Clique no botão &quot;Variáveis de Ambiente&quot; próximo a OK e Cancelar"
+        class="img-responsive atto_image_button_text-bottom" width="416" height="135"><br></p>
+
+    <p>
+      Nas variáveis do sistema, criaremos as variáveis
+      “JAVA_HOME” e “MAVEN_HOME”
+    </p>
+
+    <img
+      src="https://raw.githubusercontent.com/fernandacaramico/prototipo-portal-monitores/master/img/consultoria/projetos/003_javahome_mavenhome.png"
+      alt="Variáveis com nomes de &quot;JAVA_HOME&quot; e &quot;MAVEN_HOME&quot;"
+      class="img-responsive atto_image_button_text-bottom" width="487" height="88"><br>
+
+
+    <p>
+      Se ainda não existirem em seu sistema, clique em
+      <img
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFwAAAAeCAYAAAChf3k/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHKSURBVGhD7ZoxjoJAFIb/3YuAFQfQ3qCJFRUllaGxorGzIlR2NlQ2xIoTWJEYYu8egGwh3sAb7D7ccV0VdrOJzoC+L5k4b8I0nzP/TAgv+/3+A4w0XsUvIwkWLhkWLpmzDF+tVqLH3JJ+vy96JcI7nY6omFuw2WzOhHOkSIaFS4aFS4aFS4aFS0ay8BQTTYM2SUV9pBi3EeWifGAUrPA22tkQV86fBCWRYnk+sjDCEyzoK9RkeMuFZwQYV2VIHsEuoke0r92QI7KPfUE6gWaLP650Tv1Qdmia0wWMYFyS25Tn3QDGYofdjtqadsOwyHcdrucgTk4m0ySG47nQK+eIB2uEMuGkHNOFgWB+sRTzLTI4GJii1mk3OG9431LfHMCJE9JbkCLJfIyK536bUzMUCifMEfx/HaAmRn6GkJZuHoXIrB6t7mahVjjpcmfF9h8iFiPQWzCo+k4OyuYwPq1evWcByznmSwOeK3T/OufnlbOqLw/Fwgna/jO/LYoCippDBosDsLuEtZ7SqEDvwSK5sTE4jf01p0bw69k70+jXs8cr32VrEo0SfrjylbQm0SjhjwALlwwLlwwLlwx/JiGBys8kmPvDkSIV4BNulc7DPjv5+QAAAABJRU5ErkJggg=="
+        alt="Novo" class="img-responsive atto_image_button_text-bottom" width="92" height="30">.
+      <br></p>
+
+    <p>
+      Caso já existam, configure em <img
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFsAAAAcCAYAAAAOa8NNAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG9SURBVGhD7Zq9joJAFEa/3RcRC+MDYG9Yk62sKK2MjdU2dlSEis7GahtCZWll6xJ7eQBjIbyBb7A7MwwGDSZbyAXMPcmE4QImHm4+fsLb5XL5BUPCu14yBFw7e7fbqQLzXEajkZ7dyR4MBqrIPIfD4XAjm2OEEJZNCMsmhGUTwrIJIZIdwel00CkMJ9KbbpD72QgSMU0C2Pn8RSDsbBPuPkWaZsO3dPkRxgybdIOZIVcKJ6HFcIwQUr9sFRdZtNjBWRcleTfL5RRrxPCGYj+dP5FTiKVrJmXHOI4t6o5YaxaEsrUsJSgXIeQMPfTDLFqW2Aqp91jw0xCTPIZ0/lh+Hkli23pViJgYx95S1H1xZLOoKbO1iOSMo+lirq0Ysy8h9Z9Ejj5xsuuLmBh/qKBvHO3MbBk9UyBUJ24P19T1hlOvbKOLfuzhW4drEqxKYqSE8wmx2UNXzpMfbGNVLaF4F/NoTkdNmS0vhvKfijwOJ1hPs9oC4wcxYuFzUrhAWnO48DCUv7U4od+SzuZXrBXSqFeseZeXjVekVtn502TZeEXaeTfSUlg2ISybEJZNCH/KUDGlnzIw1cMxQgbwByBWyvHmRqj+AAAAAElFTkSuQmCC"
+        alt="Editar" class="img-responsive atto_image_button_text-bottom" width="91" height="28">.
+    </p>
+
+    <p>As variáveis devem ser:
+    </p>
+
+    <ul role="list">
+      <li>
+        Nome: JAVA_HOME
+      </li>
+      <li>
+        Local da variável: Caminho em sua máquina onde está instalado o JDK.
+      </li>
+      <li>
+        Ex.: C:\Program Files\Java\jdk-12.0.2
+      </li>
+    </ul>
+
+
+
+    <p><img
+        src="https://raw.githubusercontent.com/fernandacaramico/prototipo-portal-monitores/master/img/consultoria/projetos/004_editar_javahome.PNG"
+        alt="JAVA_HOME / C:\Program Files\Java\jdk-12.0.2" class="img-responsive atto_image_button_text-bottom"
+        width="655" height="167">
+    </p>
+
+    <ul role="list">
+      <li>
+        Nome: MAVEN_HOME
+      </li>
+      <li>
+        Local da variável: Caminho em sua máquina onde está instalado o Maven.
+      </li>
+      <li>
+        Ex.: C:\Program Files\apache-maven-3.6.3-bin\apache-maven-3.6.3
+      </li>
+    </ul>
+
+    <p><img
+        src="https://raw.githubusercontent.com/fernandacaramico/prototipo-portal-monitores/master/img/consultoria/projetos/005_editar_mavenhome.PNG"
+        alt="MAVEN_HOME / C:\Program Files\apache-maven-3.6.3-bin\apache-maven-3.6.3"
+        class="img-responsive atto_image_button_text-bottom" width="652" height="164">
+
+
+
+    <p>Assim que configuradas as variáveis JAVA e MAVEN, selecione a variável Path e clique em <img
+        src="https://raw.githubusercontent.com/fernandacaramico/prototipo-portal-monitores/master/img/consultoria/projetos/999_editar.PNG"
+        alt="Editar" class="img-responsive atto_image_button_text-bottom" width="90" height="28">.
+    </p>
+
+    <p><img
+        src="https://raw.githubusercontent.com/fernandacaramico/prototipo-portal-monitores/master/img/consultoria/projetos/006_seleciona_path.PNG"
+        alt="Selecione Path e clique em Editar" class="img-responsive atto_image_button_text-bottom" width="622"
+        height="236">
+    </p>
+
+    <p>
+      Na nova janela, clique em <img
+        src="https://raw.githubusercontent.com/fernandacaramico/prototipo-portal-monitores/master/img/consultoria/projetos/999_novo_em_path.PNG"
+        alt="Novo" class="img-responsive atto_image_button_text-bottom" width="100" height="28">. Iremos adicionar
+      <b>%JAVA_HOME%\bin</b> e <b>%MAVEN_HOME%\bin</b>
+    </p>
+    <p xml:lang="EN-US" paraid="1858898577" paraeid="{b76425ab-5f71-45e9-a98b-99dd2368494f}{4}" lang="EN-US">
+      <img
+        src="https://raw.githubusercontent.com/fernandacaramico/prototipo-portal-monitores/master/img/consultoria/projetos/007_path_com_maven_e_java_bin.PNG"
+        alt="%JAVA_HOME%\bin e %MAVEN_HOME%\bin" class="img-responsive atto_image_button_text-bottom" width="546"
+        height="115">
+    </p>
+
+    <h5 style="margin: 20px 0 10px">
+      3º Passo – corrigindo compilação do projeto core
+    </h5>
+
+    <p>
+      Navegue até o clone do projeto core-matrix-energia e então para o diretório
+      “MatrixCore”. Aqui execute o seguinte comando pelo terminal:
+    </p>
+
+    <p style="font-family: monospace">
+      <mark>mvn install:install-file -Dfile=./sqljdbc42.jar -DgroupId=com.microsoft.sqlserver -DartifactId=sqljdbc42
+        -Dversion=4.2 -Dpackaging=jar </mark>
+    </p>
+
+    <p>
+      Caso receba o erro “mvn command not found” a
+      variável do sistema não está configurada corretamente. Feche o terminal, verifique as configurações dos
+      passos anteriores e tente novamente.
+    </p>
+
+    <h5 style="margin: 20px 0 10px">
+      4º Passo – Corrigindo o ambiente de teste no NetBeans
+    </h5>
+    <p>
+      Abra o projeto MatrixCore no NetBeans e, com o botão direito do mouse, abra suas propriedades.
+    </p>
+    <p>
+
+      Vá até actions e, em debug project, corrija a propriedade “-Dspring.profiles.active=teste” para “-dev”
+    </p>
+
+    <p>
+
+      <img
+        src="https://raw.githubusercontent.com/fernandacaramico/prototipo-portal-monitores/master/img/consultoria/projetos/008_tela_properties_netbeans.PNG"
+        alt="Tela de propriedades do projeto. Selecione 'debug project'"
+        class="img-responsive atto_image_button_text-bottom" width="716" height="410">
+    </p>
+
+    <p>
+      Conteúdo completo de Set Properties:
+    </p>
+
+    <p style="font-family: monospace">
+      <mark>
+        spring-boot.run.jvmArguments=-Xdebug -Xrunjdwp:transport=dt_socket,server=n,address=${jpda.address} -noverify
+        -XX:TieredStopAtLevel=1 -Dspring.profiles.active=dev
+        <br>
+        spring-boot.run.mainClass=com.core.matrix.MatrixApplication
+        <br>
+        Env.SPRING_OUTPUT_ANSI_ENABLED=always
+        <br>
+        jpda.listen=true
+      </mark>
+    </p>
+
+
+
+
+    <h5 style="margin: 20px 0 10px">
+      5º Passo – verificando se o projeto está funcionando corretamente.
+    </h5>
+    <p>
+
+      Inicie o projeto pela IDE e, em seu navegador, vá até <a href="http://localhost:8004/swagger-ui.html#/"
+        target="_blank">http://localhost:8004/swagger-ui.html#/</a>
+    </p>
+    <p>
+      Você deve ver uma tela como essa:
+    </p>
+
+    <img
+      src="https://raw.githubusercontent.com/fernandacaramico/prototipo-portal-monitores/master/img/consultoria/projetos/009_janela_swagger.PNG"
+      alt="Tela do link swagger mostrando endpoints no navegador" class="img-responsive atto_image_button_text-bottom"
+      width="722" height="389">
+
+    <h3 style="margin: 20px 0 10px">
+      Arquiteturas
+    </h3>
+    <p>
+      <i>
+        Arquitetura do projeto core-matrix-energia:
+      </i>
+    </p>
+    <img
+      src="https://raw.githubusercontent.com/fernandacaramico/prototipo-portal-monitores/master/img/consultoria/projetos/010_arquitetura_core.PNG"
+      alt="Arquitetura Back-End Datacollector" class="img-responsive atto_image_button_text-bottom" width="617"
+      height="448">
+
+
+
+  </div>
+
+  <div
+    style="display: block; background-color: #e60058b6; border-radius: 5px; overflow: hidden; text-align: center; margin: 50px 0 50px; height: 30px">
+  </div>
+</div>
